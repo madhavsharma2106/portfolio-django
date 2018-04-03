@@ -1,0 +1,6 @@
+{%now 'Y'%}
+
+{% for job in jobs.all %}
+    <img src="{{job.image.url}}" style="max-width: 200px" >
+    {{job.summary}}
+{% endfor %}
